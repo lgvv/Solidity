@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "lgvv-datastructure",
+    name: "AlgorithmEssentials",
     products: [
         .library(
-            name: "lgvv-datastructure",
-            targets: ["lgvv-datastructure"]),
+            name: "AlgorithmEssentials",
+            targets: ["AlgorithmEssentials"]),
     ],
     targets: [
         .target(
-            name: "lgvv-datastructure"),
+            name: "AlgorithmEssentials"),
         .testTarget(
-            name: "lgvv-datastructureTests",
-            dependencies: ["lgvv-datastructure"]),
+            name: "AlgorithmEssentialsTests",
+            dependencies: ["AlgorithmEssentials"]),
     ]
 )

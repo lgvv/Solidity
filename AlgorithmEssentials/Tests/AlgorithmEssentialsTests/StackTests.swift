@@ -7,7 +7,7 @@
 
 
 import XCTest
-@testable import lgvv_datastructure
+@testable import AlgorithmEssentials
 
 final class StackTests: XCTestCase {
     var stack = Stack<Int>()

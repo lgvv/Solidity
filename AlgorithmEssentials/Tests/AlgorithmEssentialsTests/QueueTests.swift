@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import lgvv_datastructure
+@testable import AlgorithmEssentials
 
 final class QueueTests: XCTestCase {
     var queue = Queue<Int>()
