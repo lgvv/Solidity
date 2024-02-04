@@ -9,7 +9,7 @@ public struct Stack<T> {
     /// 요소
     private var elements: [T] = []
     
-    private init() {}
+    public init() {}
     
     /// 스택에 삽입
     public mutating func push(element: T) { 
