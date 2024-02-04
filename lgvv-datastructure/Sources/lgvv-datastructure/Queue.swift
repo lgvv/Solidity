@@ -74,8 +74,9 @@ extension Queue {
     }
 }
 
-//extension Queue: Sequence { 
-//    public func generate() -> AnyIterator<T> {
-//        AnyIterator(IndexingIterator(_ elements: elements.lazy))
-//    }
-//}
+extension Queue: Sequence { 
+    public func makeIterator() -> some IteratorProtocol {
+        let index = IndexingIterator(_elements: self.elements.lazy.reversed())
+        return AnyIterator(index)
+    }
+}

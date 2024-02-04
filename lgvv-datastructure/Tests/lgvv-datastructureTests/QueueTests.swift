@@ -24,8 +24,8 @@ final class QueueTests: XCTestCase {
         queue.enqueue(20)
         queue.enqueue(30)
         
-        queue[2]
+        let _ = queue[2]
         
-//        for i in queue { }
+        queue.forEach { _ in }
     }
 }
