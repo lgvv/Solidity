@@ -36,3 +36,10 @@ public struct Stack<T> {
         elements.count
     }
 }
+
+extension Stack: Sequence {
+    public func makeIterator() -> some IteratorProtocol {
+        let index = IndexingIterator(_elements: self.elements.lazy.reversed())
+        return AnyIterator(index)
+    }
+}

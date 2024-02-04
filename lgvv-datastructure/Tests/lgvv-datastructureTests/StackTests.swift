@@ -10,7 +10,7 @@ import XCTest
 @testable import lgvv_datastructure
 
 final class StackTests: XCTestCase {
-    var intStack = Stack<Int>()
+    var stack = Stack<Int>()
     
     override class func setUp() {
         super.setUp()
@@ -18,5 +18,9 @@ final class StackTests: XCTestCase {
     
     override class func tearDown() {
         super.tearDown()
+    }
+    
+    func test_스택() {
+        stack.forEach { _ in }
     }
 }
