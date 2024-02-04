@@ -57,3 +57,25 @@ public struct Queue<T> {
         elements.remove(at: at)
     }
 }
+
+extension Queue {
+    /// 시작 인덱스
+    var startIndex: Int {
+        0
+    }
+    
+    /// 마지막 인덱스
+    var endIndex: Int {
+        return count - 1
+    }
+    
+    public subscript(index: Int) -> T {
+        elements[index]
+    }
+}
+
+//extension Queue: Sequence { 
+//    public func generate() -> AnyIterator<T> {
+//        AnyIterator(IndexingIterator(_ elements: elements.lazy))
+//    }
+//}
