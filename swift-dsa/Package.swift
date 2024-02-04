@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "AlgorithmEssentials",
+    name: "swift-dsa",
     products: [
         .library(
-            name: "AlgorithmEssentials",
-            targets: ["AlgorithmEssentials"]),
+            name: "DataStructureEssentials",
+            targets: ["DataStructureEssentials"]),
     ],
     targets: [
         .target(
-            name: "AlgorithmEssentials"),
+            name: "DataStructureEssentials"),
         .testTarget(
-            name: "AlgorithmEssentialsTests",
-            dependencies: ["AlgorithmEssentials"]),
+            name: "DataStructureEssentialsTests",
+            dependencies: ["DataStructureEssentials"]),
     ]
 )

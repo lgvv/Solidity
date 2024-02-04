@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import AlgorithmEssentials
+@testable import DataStructureEssentials
 
 final class QueueTests: XCTestCase {
     var queue = Queue<Int>()

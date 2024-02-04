@@ -7,7 +7,7 @@
 
 
 import XCTest
-@testable import AlgorithmEssentials
+@testable import DataStructureEssentials
 
 final class StackTests: XCTestCase {
     var stack = Stack<Int>()
