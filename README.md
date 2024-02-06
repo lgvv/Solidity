@@ -9,7 +9,7 @@
 
 ## HTTP Live Streaming
  - [HTTP Live Streaming Overview](https://github.com/lgvv/wiki/issues/4)
-
+ - [Creating a Multivariant Playlist](https://github.com/lgvv/wiki/issues/9)
 
 ## 자료구조
  - [Stack](https://github.com/lgvv/wiki/issues/6)
