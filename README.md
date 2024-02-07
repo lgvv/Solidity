@@ -13,6 +13,7 @@
  - [Live Playlist (sliding window) construction](https://github.com/lgvv/wiki/issues/11)
  - [Event playlist construction](https://github.com/lgvv/wiki/issues/12)
  - [Video on Demand playlist construction](https://github.com/lgvv/wiki/issues/10)
+ - [Incorporating Ads into a Playlist](https://github.com/lgvv/wiki/issues/13)
  
 ## 자료구조
  - [Stack](https://github.com/lgvv/wiki/issues/6)
