@@ -11,6 +11,7 @@
 		1A6F803D2B7CE631005C0669 /* 투포인터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F803A2B7CE631005C0669 /* 투포인터.swift */; };
 		1A6F803E2B7CE631005C0669 /* 구간_합_계산.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F803B2B7CE631005C0669 /* 구간_합_계산.swift */; };
 		1A6F803F2B7CE631005C0669 /* 에라토스테네스의_체.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F803C2B7CE631005C0669 /* 에라토스테네스의_체.swift */; };
+		1A6F80412B7CEAA5005C0669 /* 이진탐색.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F80402B7CEAA5005C0669 /* 이진탐색.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		1A6F803A2B7CE631005C0669 /* 투포인터.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "투포인터.swift"; sourceTree = "<group>"; };
 		1A6F803B2B7CE631005C0669 /* 구간_합_계산.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "구간_합_계산.swift"; sourceTree = "<group>"; };
 		1A6F803C2B7CE631005C0669 /* 에라토스테네스의_체.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "에라토스테네스의_체.swift"; sourceTree = "<group>"; };
+		1A6F80402B7CEAA5005C0669 /* 이진탐색.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진탐색.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				1A6F803B2B7CE631005C0669 /* 구간_합_계산.swift */,
 				1A6F803C2B7CE631005C0669 /* 에라토스테네스의_체.swift */,
 				1A6F803A2B7CE631005C0669 /* 투포인터.swift */,
+				1A6F80402B7CEAA5005C0669 /* 이진탐색.swift */,
 			);
 			name = "알고리즘_유형";
 			path = "알고리즘_유형";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6F80412B7CEAA5005C0669 /* 이진탐색.swift in Sources */,
 				1A6F803F2B7CE631005C0669 /* 에라토스테네스의_체.swift in Sources */,
 				1A6F803D2B7CE631005C0669 /* 투포인터.swift in Sources */,
 				1A6F803E2B7CE631005C0669 /* 구간_합_계산.swift in Sources */,
