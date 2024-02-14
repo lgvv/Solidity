@@ -49,4 +49,52 @@ func 이진탐색_1() {
     }
 }
 
-func 이진탐색_파라메트리서치_1() { }
+/// 이진탐색
+/// - Important: 시간복잡도는 O(logN)
+/// - note: 파라메트리서치란 최적화 문제를 결정 문제로 바꿔서 해결하는 기법
+/// 예를들어 범위 내에서 조건을 만족하는 가장 큰 값을 찾으라는 문제의 경우 사용
+///
+/// 문제
+/// 1. 특정 어레이가 주어짐.
+/// 2. 특정 값으로 모든 원소를 뺀 후 그 결과를 모두 더함.
+/// 3. 모두 더한 결과가 적어도 M이상 얻기 위한 특정값의 최대값은 얼마인가?
+func 이진탐색_파라메트리_서치_1() {
+    let array = [19, 15, 10, 17]
+    let m = 6
+    
+    var startValue = 0
+    var endValue = array.max() ?? 0
+    
+    var middleValue = Int((startValue + endValue) / 2)
+    
+    var result: Int = 0
+    while startValue <= endValue {
+        var total = 0
+        array.forEach { element in
+            if element > middleValue {
+                total += (element - middleValue)
+            }
+        }
+        
+//        print(startValue, endValue, middleValue, total)
+        
+        if total == m {
+            // 정확히 일치하는 경우
+            result = middleValue
+            break
+        } else if total < m {
+            // 덜 자른 경우
+            endValue = middleValue - 1
+        } else if total > m {
+            // 더 자른 경우
+            
+            // 특정 값의 최대값을 할당
+            result = middleValue
+            startValue = middleValue + 1
+        }
+        
+        middleValue = Int((startValue + endValue) / 2)
+    }
+    
+    print(result)
+}
