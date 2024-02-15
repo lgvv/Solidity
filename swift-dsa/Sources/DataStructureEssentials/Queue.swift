@@ -1,11 +1,9 @@
 //
-//  Queue.swift
+//  투포인터_알고리즘.swift
+//  Algorithm
 //
+//  Created by Geon Woo lee on 2/15/24.
 //
-//  Created by Geon Woo lee on 2/4/24.
-//
-
-import Foundation
 
 public struct Queue<T> {
     private var elements: [T] = []
