@@ -14,7 +14,8 @@
  - [Event playlist construction](https://github.com/lgvv/wiki/issues/12)
  - [Video on Demand playlist construction](https://github.com/lgvv/wiki/issues/10)
  - [Incorporating Ads into a Playlist](https://github.com/lgvv/wiki/issues/13)
- - [https://github.com/lgvv/wiki/issues/14](https://github.com/lgvv/wiki/issues/14)
+ - [Adding alternate media to a playlist](https://github.com/lgvv/wiki/issues/14)
+
 ## 자료구조
  - [Stack](https://github.com/lgvv/wiki/issues/6)
  - [Queue](https://github.com/lgvv/wiki/issues/7)
