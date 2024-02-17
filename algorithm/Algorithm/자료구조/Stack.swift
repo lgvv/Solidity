@@ -1,8 +1,8 @@
 //
-//  투포인터_알고리즘.swift
+//  Stack.swift
 //  Algorithm
 //
-//  Created by Geon Woo lee on 2/15/24.
+//  Created by Geon Woo lee on 2/18/24.
 //
 
 public struct Stack<T> {
@@ -12,7 +12,7 @@ public struct Stack<T> {
     public init() {}
     
     /// 스택에 삽입
-    public mutating func push(element: T) { 
+    public mutating func push(element: T) {
         elements.append(element)
     }
     

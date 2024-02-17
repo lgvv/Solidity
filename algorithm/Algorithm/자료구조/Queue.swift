@@ -1,9 +1,11 @@
 //
-//  투포인터_알고리즘.swift
+//  Queue.swift
 //  Algorithm
 //
-//  Created by Geon Woo lee on 2/15/24.
+//  Created by Geon Woo lee on 2/18/24.
 //
+
+import Foundation
 
 public struct Queue<T> {
     private var elements: [T] = []
@@ -11,7 +13,7 @@ public struct Queue<T> {
     public init() {}
     
     /// 큐의 맨 뒤에 요소를 추가
-    public mutating func enqueue(_ element: T) { 
+    public mutating func enqueue(_ element: T) {
         elements.append(element)
     }
     
@@ -21,7 +23,7 @@ public struct Queue<T> {
     }
     
     /// 큐의 첫 요소를 반환하되 제거는 안함
-    public mutating func peek(_ element: T) -> T? { 
+    public mutating func peek(_ element: T) -> T? {
         return elements.first
     }
     
@@ -72,7 +74,7 @@ extension Queue {
     }
 }
 
-extension Queue: Sequence { 
+extension Queue: Sequence {
     public func makeIterator() -> some IteratorProtocol {
         let index = IndexingIterator(_elements: self.elements.lazy.reversed())
         return AnyIterator(index)

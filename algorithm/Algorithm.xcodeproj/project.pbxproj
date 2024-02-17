@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0062672B811588005F0E52 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0062662B811588005F0E52 /* Stack.swift */; };
+		1A0062692B8115B3005F0E52 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0062682B8115B3005F0E52 /* Queue.swift */; };
 		1A6F80222B7B38C8005C0669 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F80212B7B38C8005C0669 /* main.swift */; };
 		1A6F803D2B7CE631005C0669 /* 투포인터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F803A2B7CE631005C0669 /* 투포인터.swift */; };
 		1A6F803E2B7CE631005C0669 /* 구간_합_계산.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F803B2B7CE631005C0669 /* 구간_합_계산.swift */; };
 		1A6F803F2B7CE631005C0669 /* 에라토스테네스의_체.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F803C2B7CE631005C0669 /* 에라토스테네스의_체.swift */; };
 		1A6F80412B7CEAA5005C0669 /* 이진탐색.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F80402B7CEAA5005C0669 /* 이진탐색.swift */; };
-		1A6F80452B7D2010005C0669 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F80432B7D2010005C0669 /* Stack.swift */; };
-		1A6F80462B7D2010005C0669 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F80442B7D2010005C0669 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,14 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A0062662B811588005F0E52 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		1A0062682B8115B3005F0E52 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		1A6F801E2B7B38C8005C0669 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6F80212B7B38C8005C0669 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1A6F803A2B7CE631005C0669 /* 투포인터.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "투포인터.swift"; sourceTree = "<group>"; };
 		1A6F803B2B7CE631005C0669 /* 구간_합_계산.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "구간_합_계산.swift"; sourceTree = "<group>"; };
 		1A6F803C2B7CE631005C0669 /* 에라토스테네스의_체.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "에라토스테네스의_체.swift"; sourceTree = "<group>"; };
 		1A6F80402B7CEAA5005C0669 /* 이진탐색.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진탐색.swift"; sourceTree = "<group>"; };
-		1A6F80432B7D2010005C0669 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = "../../../swift-dsa/Sources/DataStructureEssentials/Stack.swift"; sourceTree = "<group>"; };
-		1A6F80442B7D2010005C0669 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = "../../../swift-dsa/Sources/DataStructureEssentials/Queue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 		1A6F80422B7D1FF8005C0669 /* 자료구조 */ = {
 			isa = PBXGroup;
 			children = (
-				1A6F80442B7D2010005C0669 /* Queue.swift */,
-				1A6F80432B7D2010005C0669 /* Stack.swift */,
+				1A0062662B811588005F0E52 /* Stack.swift */,
+				1A0062682B8115B3005F0E52 /* Queue.swift */,
 			);
 			name = "자료구조";
 			path = "자료구조";
@@ -157,11 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6F80412B7CEAA5005C0669 /* 이진탐색.swift in Sources */,
-				1A6F80462B7D2010005C0669 /* Queue.swift in Sources */,
+				1A0062692B8115B3005F0E52 /* Queue.swift in Sources */,
 				1A6F803F2B7CE631005C0669 /* 에라토스테네스의_체.swift in Sources */,
 				1A6F803D2B7CE631005C0669 /* 투포인터.swift in Sources */,
 				1A6F803E2B7CE631005C0669 /* 구간_합_계산.swift in Sources */,
-				1A6F80452B7D2010005C0669 /* Stack.swift in Sources */,
+				1A0062672B811588005F0E52 /* Stack.swift in Sources */,
 				1A6F80222B7B38C8005C0669 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
