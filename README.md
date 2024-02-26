@@ -21,3 +21,5 @@
  - [Queue](https://github.com/lgvv/wiki/issues/7)
 
 ## iOS
+ - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
+ - [EqutableView](https://github.com/lgvv/wiki/issues/20)
