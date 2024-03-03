@@ -23,4 +23,4 @@
 ## iOS
  - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
  - [EqutableView](https://github.com/lgvv/wiki/issues/20)
- - [](https://github.com/lgvv/wiki/issues/18)
+ - [New access modifier: package](https://github.com/lgvv/wiki/issues/18)
