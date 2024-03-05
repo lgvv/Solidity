@@ -21,7 +21,7 @@
  - [Stack](https://github.com/lgvv/wiki/issues/6)
  
 ## iOS
- - [[SwiftUI] keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
+ - [(SwiftUI) keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
  - [New access modifier: package](https://github.com/lgvv/wiki/issues/18)
  - [EqutableView](https://github.com/lgvv/wiki/issues/20)
  - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
