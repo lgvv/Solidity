@@ -22,6 +22,8 @@
  
 ## iOS
  - [(SwiftUI) keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
+ - [CoreData 정리 2 실습 (2/2)](https://github.com/lgvv/wiki/issues/23)
+ - [CoreData 정리 1 이론 (1/2)](https://github.com/lgvv/wiki/issues/21)
  - [New access modifier: package](https://github.com/lgvv/wiki/issues/18)
  - [EqutableView](https://github.com/lgvv/wiki/issues/20)
  - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
