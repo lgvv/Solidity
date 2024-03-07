@@ -21,6 +21,7 @@
  - [Stack](https://github.com/lgvv/wiki/issues/6)
  
 ## iOS
+ - [SwiftData in UIKit](https://github.com/lgvv/wiki/issues/24)
  - [(SwiftUI) keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
  - [CoreData 정리 2 실습 (2/2)](https://github.com/lgvv/wiki/issues/23)
  - [CoreData 정리 1 이론 (1/2)](https://github.com/lgvv/wiki/issues/21)
