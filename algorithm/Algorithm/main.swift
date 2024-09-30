@@ -9,10 +9,12 @@ import Foundation
 
 print("Hello, World!")
 
+// MARK: - Heap
+let _ = Heap<Int>(elements: [1, 3, 4, 2, 7, 5, 6], sortFunction: >)
 
 // MARK: - 이진탐색
 //이진탐색_1()
-이진탐색_파라메트리_서치_1()
+//이진탐색_파라메트리_서치_1()
 
 // MARK: - 에라토스테네스의 체
 //에라토스테네스의_체_1()
