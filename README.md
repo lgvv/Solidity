@@ -2,7 +2,7 @@
 - 대학 졸업 후 공부한 내용을 정리하기 위한 곳
 - Rule: 각 섹션에서 새로운 글이 상단에 위치시키기
 
-### 멀티미디어
+## 멀티미디어
 <details>
 <summary>멀티미디어 이론</summary>
  
@@ -24,10 +24,108 @@
  - [Adding alternate media to a playlist](https://github.com/lgvv/wiki/issues/14)
 </details>
 
-### 자료구조
- - [Queue](https://github.com/lgvv/wiki/issues/7)
- - [Stack](https://github.com/lgvv/wiki/issues/6)
+## 자료구조와 알고리즘
+
+<details>
+<summary> 문제 풀이 </summary>
  
+ - [[Swift] BOJ 1516 게임 개발](https://rldd.tistory.com/432) 
+ - [[Swift] BOJ 1766 문제집](https://rldd.tistory.com/431) 
+ - [[Swift] BOJ 2252 줄 세우기](https://rldd.tistory.com/430) 
+ - [[Swift] BOJ 23034 조별과제 멈춰! (실패: 시간초과)](https://rldd.tistory.com/411) 
+ - [[Swift] BOJ 4386 별자리 만들기✨](https://rldd.tistory.com/410) 
+ - [[Swift] BOJ 1197 네트워크 연결 (🎉 400번째 포스팅이다 ㅎㅎ)](https://rldd.tistory.com/409) 
+ - [[Swift] BOJ 1647 도시 분할 계획](https://rldd.tistory.com/408) 
+ - [[Swift] BOJ 1197 최소 스패닝 트리](https://rldd.tistory.com/407) 
+ - [[Swift] BOJ 2143 두 배열의 합](https://rldd.tistory.com/403) 
+ - [[Swift] BOJ 2352 반도체 설계](https://rldd.tistory.com/402) 
+ - [[Swift] BOJ 2805 나무 자르기](https://rldd.tistory.com/401) 
+ - [[Swift] BOJ 1920 수 찾기](https://rldd.tistory.com/400) 
+ - [[Swift] BOJ 7453 합이 0인 네 정수](https://rldd.tistory.com/399) 
+ - [[Swift] BOJ 12738 가장 긴 증가하는 부분 수열 3](https://rldd.tistory.com/398) 
+ - [[Swift] BOJ 1300 K번째 수](https://rldd.tistory.com/397) 
+ - [[Swift] BOJ 1238 파티](https://rldd.tistory.com/396) 
+ - [[Swift] BOJ 1916 최소비용 구하기](https://rldd.tistory.com/395) 
+ - [[Swift] 프로그래머스 LV2. [1차] 뉴스 클러스터링](https://rldd.tistory.com/385) 
+ - [[Swift] 프로그래머스 LV2. 수식 최대화](https://rldd.tistory.com/380) 
+ - [[Swift] 프로그래머스 LV2. [3차] 파일명 정렬](https://rldd.tistory.com/379) 
+ - [[Swift] 프로그래머스 LV2. 방문 길이](https://rldd.tistory.com/378) 
+ - [[Swift] 프로그래머스 LV2. 주차 요금 계산](https://rldd.tistory.com/377) 
+ - [[Swift] 프로그래머스 LV2. 쿼드 압축 후 개수 세기](https://rldd.tistory.com/374) 
+ - [[Swift] BOJ 1753 최단경로](https://rldd.tistory.com/373) 
+ - [[Swift] 프로그래머스 LV2. 전력망을 둘로 나누기](https://rldd.tistory.com/364) 
+ - [[Swift] BOJ 11724 연결 요소의 개수](https://rldd.tistory.com/363) 
+ - [[Swift] BOJ 1697 숨바꼭질 (2차원 배열보다 1차원 튜플 배열)](https://rldd.tistory.com/362) 
+ - [[Swift] BOJ 7576 토마토](https://rldd.tistory.com/361) 
+ - [[Swift] BOJ 2667 단지번호붙이기](https://rldd.tistory.com/360) 
+ - [[Swift] BOJ 1012 유기농 배추](https://rldd.tistory.com/359) 
+ - [[Swift] BOJ 2606 바이러스](https://rldd.tistory.com/358) 
+ - [[Swift] BOJ 2178 미로 탐색](https://rldd.tistory.com/357) 
+ - [[Swift] BOJ 10844 쉬운 계단 수](https://rldd.tistory.com/355) 
+ - [[Swift] BOJ 2158 포도주 시식](https://rldd.tistory.com/354) 
+ - [[Swift] BOJ 1912 연속합](https://rldd.tistory.com/353) 
+ - [[Swift] BOJ 1932 정수 삼각형](https://rldd.tistory.com/352) 
+ - [[Swift] BOJ 11053 가장 긴 증가하는 부분 수열](https://rldd.tistory.com/351) 
+ - [[Swift] BOJ 2579 계단 오르기](https://rldd.tistory.com/350) 
+ - [[Swift] BOJ 11726 2 x n 타일링](https://rldd.tistory.com/349) 
+ - [[Swift] BOJ 9095 1,2,3더하기](https://rldd.tistory.com/348) 
+ - [[Swift] 프로그래머스 LV2. 땅따먹기](https://rldd.tistory.com/347) 
+ - [[Swift] 프로그래머스 LV2. JadenCase 문자열 만들기](https://rldd.tistory.com/346) 
+ - [[Swift] 프로그래머스 LV2. 모음사전](https://rldd.tistory.com/345) 
+ - [[Swift] 프로그래머스 LV2. 튜플](https://rldd.tistory.com/344) 
+ - [[Swift] 프로그래머스 LV. 2 N개의 최소공배수](https://rldd.tistory.com/343) 
+ - [[Swift] 프로그래머스 LV2. 삼각 달팽이](https://rldd.tistory.com/341) 
+ - [[Swift] 프로그래머스 LV2. 가장 큰 수](https://rldd.tistory.com/339) 
+ - [[Swift] 프로그래머스 LV2. 피로도](https://rldd.tistory.com/338) 
+ - [[Swift] 프로그래머스 LV2. 소수 찾기](https://rldd.tistory.com/337) 
+ - [[Swift] BOJ 10610번 30](https://rldd.tistory.com/331) 
+ - [[Swift] BOJ 1931회의실 배정](https://rldd.tistory.com/330) 
+ - [[Swift] BOJ 2839 설탕 배달](https://rldd.tistory.com/329) 
+ - [[Swift] 프로그래머스 LV1. 소수 찾기](https://rldd.tistory.com/327) 
+ - [[Swift] 프로그래머스 LV1. [1차] 다트 게임](https://rldd.tistory.com/326) 
+ - [[Swift] 프로그래머스 LV1. [1차] 비밀지도](https://rldd.tistory.com/324) 
+ - [[Swift] 프로그래머스 LV1. 최소직사각형](https://rldd.tistory.com/323) 
+ - [[Swift] 프로그래머스 LV1 실패율(시간 초과 해결)](https://rldd.tistory.com/322) 
+ - [[프로그래머스] SQL 고득점 Kit (MySQL)](https://rldd.tistory.com/250) 
+ - [[프로그래머스] 입국심사 43238 swift](https://rldd.tistory.com/249) 
+ - [[프로그래머스] 힙(Heap) 42627 Swift](https://rldd.tistory.com/246) 
+ - [[프로그래머스] 다리를 지나는 트럭 42583 swift](https://rldd.tistory.com/243) 
+ - [[프로그래머스] 42586 기능개발 Swift](https://rldd.tistory.com/242) 
+ - [[프로그래머스] 행렬의 곱셈 12949 Swift](https://rldd.tistory.com/241) 
+ - [[프로그래머스] 60057 문자열 압축 Swift](https://rldd.tistory.com/240) 
+ - [[프로그래머스] Swift 위장 - 42578](https://rldd.tistory.com/228) 
+ - [[프로그래머스] Swift 숫자 문자열과 영단어 (81301)](https://rldd.tistory.com/226) 
+ - [[Swift] 프로그래머스 LV2. 큰 수 만들기](https://rldd.tistory.com/159) 
+ - [[프로그래머스] 조이스틱 Swift (Greedy)](https://rldd.tistory.com/156) 
+ - [[프로그래머스] 타겟넘버 Swift (DFS)](https://rldd.tistory.com/155) 
+ - [Swift5 코테 공부 사전설정](https://rldd.tistory.com/154)
+ 
+</details>
+
+<details>
+<summary> Swift 문법 </summary>
+ 
+ - [[Swift] 10진수를 2진수로 바꾸는 방법](https://rldd.tistory.com/325) 
+ - [[iOS/Swift] init과 super.init에 대해서 알아보자. 🤔](https://rldd.tistory.com/315) 
+ - [[Swift5] extension Protocol (feat. optional func, objc)](https://rldd.tistory.com/284) 
+ - [Swift remove element from array by value](https://rldd.tistory.com/248) 
+ - [[Swift5] 딕셔너리 contains 활용법](https://rldd.tistory.com/245) 
+ - [Swift 2차원 배열 정렬하기 문법 tip!](https://rldd.tistory.com/244) 
+</details>
+
+<details>
+<summary>알고리즘 이론</summary>
+ 
+ - [[Swift] 크루스칼 알고리즘과 위상정렬](https://rldd.tistory.com/406) 
+ - [[Swift] 플로이드 워셜 알고리즘](https://rldd.tistory.com/369) 
+ - [[Swift] Dijkstra 알고리즘](https://rldd.tistory.com/368) 
+ - [[이것이 코딩 테스트다] chapter 5. DFS/BFS](https://rldd.tistory.com/342) 
+ - [[이것이 코딩 테스트다] chapter 8. DP](https://rldd.tistory.com/340) 
+ - [Swift Data Structure and Algorithms](https://rldd.tistory.com/223) 
+
+</details>
+
+
 ### iOS
  - [SwiftData in UIKit](https://github.com/lgvv/wiki/issues/24)
  - [(SwiftUI) keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
