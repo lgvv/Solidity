@@ -35,7 +35,7 @@
  
 ## 블로그 포스팅 목록
 <details>
-<summary>접기/펼치기</summary>
+<summary>티스토리</summary>
 
  - [We do not provide support for this pre-release version.](https://rldd.tistory.com/653)
  - [SwiftUI로 Placeholder가 존재하는 TextField 설계 팁 (UIKit호환)](https://rldd.tistory.com/652)
