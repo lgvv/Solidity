@@ -1,8 +1,8 @@
-## Wiki
+## 📚 Wiki
 - 대학 졸업 후 공부한 내용을 정리하기 위한 곳
 - Rule: 각 섹션에서 새로운 글이 상단에 위치시키기
 
-## 멀티미디어
+## 📺 멀티미디어
 <details>
 <summary>멀티미디어 이론</summary>
  
@@ -24,7 +24,7 @@
  - [Adding alternate media to a playlist](https://github.com/lgvv/wiki/issues/14)
 </details>
 
-## 자료구조와 알고리즘
+## 🍋 자료구조와 알고리즘
 
 <details>
 <summary> 문제 풀이 </summary>
@@ -125,17 +125,7 @@
 
 </details>
 
-
-### iOS
- - [SwiftData in UIKit](https://github.com/lgvv/wiki/issues/24)
- - [(SwiftUI) keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
- - [CoreData 정리 2 실습 (2/2)](https://github.com/lgvv/wiki/issues/23)
- - [CoreData 정리 1 이론 (1/2)](https://github.com/lgvv/wiki/issues/21)
- - [New access modifier: package](https://github.com/lgvv/wiki/issues/18)
- - [EqutableView](https://github.com/lgvv/wiki/issues/20)
- - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
- 
-### 블로그 전체 포스팅 목록
+## 🎞️ 블로그 전체 포스팅 목록
 <details>
 <summary>티스토리</summary>
 
