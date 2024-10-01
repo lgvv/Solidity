@@ -33,7 +33,7 @@
  - [EqutableView](https://github.com/lgvv/wiki/issues/20)
  - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
  
-## 블로그 포스팅 목록
+## 블로그 전체 포스팅 목록
 <details>
 <summary>티스토리</summary>
 
