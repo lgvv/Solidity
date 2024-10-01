@@ -1,4 +1,7 @@
-## 멀티미디어
+## Wiki
+- Rule: 각 섹션에서 새로운 글이 상단에 위치시키기
+
+### 멀티미디어
 <details>
 <summary>멀티미디어 이론</summary>
  
@@ -20,11 +23,11 @@
  - [Adding alternate media to a playlist](https://github.com/lgvv/wiki/issues/14)
 </details>
 
-## 자료구조
+### 자료구조
  - [Queue](https://github.com/lgvv/wiki/issues/7)
  - [Stack](https://github.com/lgvv/wiki/issues/6)
  
-## iOS
+### iOS
  - [SwiftData in UIKit](https://github.com/lgvv/wiki/issues/24)
  - [(SwiftUI) keyboard 이벤트 핸들링](https://github.com/lgvv/wiki/issues/22)
  - [CoreData 정리 2 실습 (2/2)](https://github.com/lgvv/wiki/issues/23)
@@ -33,7 +36,7 @@
  - [EqutableView](https://github.com/lgvv/wiki/issues/20)
  - [plain ol' data(POD)](https://github.com/lgvv/wiki/issues/19)
  
-## 블로그 전체 포스팅 목록
+### 블로그 전체 포스팅 목록
 <details>
 <summary>티스토리</summary>
 
