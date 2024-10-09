@@ -135,9 +135,9 @@ class Solution_LC238 {
         var zeroCount = 0
         var total = 1
         
-        var num = 0
+//        var num = 0
         for i in nums.indices {
-            num = nums[i]
+            var num = nums[i]
             if num == 0 {
                 zeroCount += 1
                 total *= 1
