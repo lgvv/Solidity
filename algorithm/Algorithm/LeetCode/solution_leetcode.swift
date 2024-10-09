@@ -265,3 +265,106 @@ class Solution_283 {
 //        print(nums)
     }
 }
+
+class Solution_392 {
+    func isSubsequence(_ s: String, _ t: String) -> Bool {
+        if s == "" { return true }
+        var sIndex = s.startIndex
+        
+        var findCount = 0
+        
+        for tIndex in t.indices {
+            let tValue = t[tIndex]
+            
+            if s[sIndex] == tValue {
+                findCount += 1
+                
+                if findCount == s.count {
+                    return true
+                }
+                
+                let newIndex = s.index(after: sIndex)
+                sIndex = newIndex
+                
+                
+            }
+        }
+        
+        return false
+    }
+}
+
+class Solution_11 {
+    func maxArea(_ height: [Int]) -> Int {
+        var maxArea = 0
+        var left = 0
+        var right = height.count - 1
+        
+        
+        
+        while left < right {
+            print("L \(left) , R \(right) | \(height[left]) | \(height[right])")
+            let distance = right - left
+            let area = distance * min(height[left], height[right])
+            
+            maxArea = max(maxArea, area)
+            
+            if height[left] < height[right] {
+                left += 1
+            } else {
+                right -= 1
+            }
+        }
+        
+        return maxArea
+    }
+}
+
+class Solution_1679 {
+    func maxOperations(_ nums: [Int], _ k: Int) -> Int {
+        if k == 1 { return 0 }
+        
+        var matchCount = 0
+        // 숫자, 갯수
+        var dict: [Int: Int] = [:]
+        
+        nums.forEach { num in
+            if let count = dict[num] {
+                dict[num] = count + 1
+            } else {
+                dict[num] = 1
+            }
+        }
+        
+        var keys: [Int] = dict.keys.map { $0 }
+        
+        while !keys.isEmpty {
+            if let key = keys.first {
+                
+                if key >= k {
+                    keys.removeAll { $0 == key }
+    
+                } else {
+
+                    let matchKey = k - key
+                    
+                    let min = min(dict[matchKey] ?? 0, dict[key] ?? 0)
+                    
+                    if key == matchKey {
+                        matchCount += (min / 2)
+                    } else {
+                        matchCount += min
+                    }
+                    
+                    keys.removeAll { $0 == key || $0 == matchKey }
+                }
+                
+                
+            } else {
+                break
+            }
+        }
+        
+        return matchCount
+    }
+}

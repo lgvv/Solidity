@@ -40,6 +40,10 @@ print("✅ 프로그램 시작점")
 //var a: [Character] = ["a","b","c"]
 //let solution = Solution_443().compress(&a)
 
-var a = [0,1,0,3,12]
-let solution = Solution_283().moveZeroes(&a)
-print("\n✅\(solution)")
+//var a = [0,1,0,3,12]
+//let solution = Solution_283().moveZeroes(&a)
+//print("\n✅\(solution)")
+
+//Solution_392().isSubsequence("abc", "aaabbbccc")
+//Solution_11().maxArea([1,8,6,2,5,4,8,3,7])
+Solution_1679().maxOperations([4,4,1,3,1,3,2,2,5,5,1,5,2,1,2,3,5,4], 2)
