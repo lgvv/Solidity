@@ -48,7 +48,6 @@ class Solution_LC1071 {
     }
 }
 
-
 class Solution_LC1431 {
     func kidsWithCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
         let max = candies.max() ?? 100
@@ -175,3 +174,94 @@ class Solution_LC238 {
     }
 }
 
+class Solution_334 {
+    func increasingTriplet(_ nums: [Int]) -> Bool {
+        // kLengthArray는 현재까지 발견한 k개의 증가하는 수열을 저장
+        var k = 3
+        var kLengthArray = Array(repeating: Int.max, count: k - 1)
+        print(kLengthArray)
+        for num in nums {
+            for i in 0..<(k - 1) {
+                if num <= kLengthArray[i] {
+                    kLengthArray[i] = num // 적절한 위치에 값을 넣음
+                    break
+                }
+                // 마지막 값보다 더 크면 k개의 수가 완성됨
+                if i == k - 2 {
+                    return true
+                }
+            }
+        }
+        return false // k개의 증가하는 수열이 없는 경우
+    }
+}
+
+class Solution_443 {
+    func compress(_ chars: inout [Character]) -> Int {
+        
+        if chars.count == 1 {
+            return chars.count
+        }
+        
+        var count = 1
+        
+        var result: String = ""
+        for index in 1..<chars.count {
+            let prev = chars[index-1]
+            let char = chars[index]
+            
+            if prev == char {
+                count += 1
+            } else {
+                if count != 1 {
+                    result += "\(prev)\(count)"
+                } else {
+                    result += "\(prev)"
+                }
+                
+                if index == chars.count - 1 {
+                    if let last = chars.last {
+                        result += "\(last)"
+                    }
+                }
+                
+                count = 1
+            }
+        }
+        
+        if count != 1 {
+            if let last = chars.last {
+                result += "\(last)\(count)"
+            }
+        }
+        
+//        print(count)
+        var arr: [Character] = []
+        result.forEach {
+            arr.append($0)
+        }
+        chars = arr
+//        print(result)
+        return result.count
+    }
+}
+
+class Solution_283 {
+    func moveZeroes(_ nums: inout [Int]) {
+        var left = 0
+        var right = nums.count - 1
+        
+        var count = 0
+        nums.forEach { num in
+            if num == 0 {
+                count += 1
+            }
+        }
+        nums.removeAll { $0 == 0 }
+        for _ in 0..<count {
+            nums.append(0)
+        }
+        
+//        print(nums)
+    }
+}

@@ -35,3 +35,11 @@ print("✅ 프로그램 시작점")
 //Solution_LC345().reverseVowels("leetcode")
 //Solution_LC151().reverseWords("  hello world  ")
 //Solution_LC238().productExceptSelf([-1,1,0,-3,3])
+//let solution = Solution_334().increasingTriplet([2,1,5,0,4,6])
+
+//var a: [Character] = ["a","b","c"]
+//let solution = Solution_443().compress(&a)
+
+var a = [0,1,0,3,12]
+let solution = Solution_283().moveZeroes(&a)
+print("\n✅\(solution)")
