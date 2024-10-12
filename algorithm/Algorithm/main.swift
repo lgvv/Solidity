@@ -50,4 +50,6 @@ print("✅ 프로그램 시작점")
 //Solution_643().findMaxAverage([1,12,-5,-6,50,3], 4)
 //Solution_1456().maxVowels("abciiidef", 3)
 //Solution_1004().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2)
-Solution_1493().longestSubarray([1, 1, 0, 1])
+//Solution_1493().longestSubarray([1, 1, 0, 1])
+
+Solution_1732().largestAltitude([-4,-3,-2,-1,4,3,2])

@@ -482,3 +482,47 @@ class Solution_1493 {
         return maxLen - 1
     }
 }
+
+// MARK: - Sliding Window
+
+class Solution_1732 {
+    func largestAltitude(_ gain: [Int]) -> Int {
+        var height = 0
+        var partialResult = 0
+        
+        gain.forEach { element in
+            partialResult += element
+          
+            height = max(partialResult, height)
+        }
+        
+//        print(height)
+        return height
+    }
+}
+
+class Solution_724 {
+    func pivotIndex(_ nums: [Int]) -> Int {
+        
+        var sum = 0
+        nums.forEach { sum += $0 }
+        
+        var leftSum = 0
+        var rightSum = sum - nums[0]
+        
+        if leftSum == rightSum {
+            return 0
+        }
+        
+        for i in 1..<nums.count {
+            leftSum = leftSum + nums[i-1]
+            rightSum = sum - leftSum - nums[i]
+            
+            if leftSum == rightSum {
+                return i
+            } 
+        }
+
+        return -1
+    }
+}
