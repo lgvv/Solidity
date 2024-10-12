@@ -385,3 +385,42 @@ class Solution_643 {
         return Double(maxSum) / Double(k)
     }
 }
+
+class Solution_1456 {
+    func maxVowels(_ s: String, _ k: Int) -> Int {
+        let vowels: Set<Character> = ["a", "e", "i", "o", "u"]
+        let chars = Array(s)
+        
+        var maxVowels = 0
+        var currentVowels = 0
+        
+        // 첫 번째 윈도우에 있는 모음 개수 계산
+        for i in 0..<k {
+            if vowels.contains(chars[i]) {
+                currentVowels += 1
+            }
+        }
+        
+        if currentVowels == k {
+            return k
+        }
+        
+        maxVowels = currentVowels
+        
+        // 슬라이딩 윈도우를 오른쪽으로 이동
+        for i in k..<chars.count {
+            // 윈도우에서 빠지는 문자
+            if vowels.contains(chars[i - k]) {
+                currentVowels -= 1
+            }
+            // 윈도우에 새로 들어오는 문자
+            if vowels.contains(chars[i]) {
+                currentVowels += 1
+            }
+            // 최대 모음 개수 갱신
+            maxVowels = max(maxVowels, currentVowels)
+        }
+        
+        return maxVowels
+    }
+}
