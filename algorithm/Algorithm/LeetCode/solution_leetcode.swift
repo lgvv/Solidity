@@ -1,9 +1,6 @@
-//
-//  1768.swift
-//  Algorithm
-//
-//  Created by Geon Woo lee on 10/7/24.
-//
+// LeetCode
+
+// MARK: - Array / String
 
 class Solution_LC1768 {
     func mergeAlternately(_ word1: String, _ word2: String) -> String {
@@ -246,6 +243,8 @@ class Solution_443 {
     }
 }
 
+// MARK: - Two Pointer
+
 class Solution_283 {
     func moveZeroes(_ nums: inout [Int]) {
         var left = 0
@@ -369,6 +368,8 @@ class Solution_1679 {
     }
 }
 
+// MARK: - Sliding Window
+
 class Solution_643 {
     func findMaxAverage(_ nums: [Int], _ k: Int) -> Double {
         // 먼저 첫 번째 k개의 요소 합계를 계산
@@ -422,5 +423,62 @@ class Solution_1456 {
         }
         
         return maxVowels
+    }
+}
+
+class Solution_1004 {
+    func longestOnes(_ nums: [Int], _ k: Int) -> Int {
+        var left = 0
+        var maxLen = 0
+        var zeroCount = 0
+
+        for right in 0..<nums.count {
+            // 오른쪽 포인터가 가리키는 값이 0이면 zeroCount 증가
+            if nums[right] == 0 {
+                zeroCount += 1
+            }
+            
+            // zeroCount가 k보다 크면 왼쪽 포인터를 이동
+            while zeroCount > k {
+                print(right, left)
+                if nums[left] == 0 {
+                    zeroCount -= 1
+                }
+                left += 1
+            }
+            
+            // 현재 윈도우 크기 (right - left + 1)과 maxLen을 비교하여 최대값 갱신
+            maxLen = max(maxLen, right - left + 1)
+        }
+
+        return maxLen
+    }
+}
+
+class Solution_1493 {
+    func longestSubarray(_ nums: [Int]) -> Int {
+        
+        var left = 0
+        var maxLen = 0
+        var zeroCount = 0
+        
+        for right in 0..<nums.count {
+            if nums[right] == 0 {
+                zeroCount += 1
+            }
+            
+            while zeroCount > 1 {
+                if nums[left] == 0 {
+                    zeroCount -= 1
+                }
+                left += 1
+            }
+            
+            maxLen = max(maxLen, right - left + 1)
+        }
+        
+//        print(maxLen - 1)
+        
+        return maxLen - 1
     }
 }
