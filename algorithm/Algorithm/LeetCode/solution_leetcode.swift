@@ -368,3 +368,20 @@ class Solution_1679 {
         return matchCount
     }
 }
+
+class Solution_643 {
+    func findMaxAverage(_ nums: [Int], _ k: Int) -> Double {
+        // 먼저 첫 번째 k개의 요소 합계를 계산
+        var currentSum = nums[0..<k].reduce(0, +)
+        var maxSum = currentSum
+        
+        // 나머지 배열을 순회하면서 슬라이딩 윈도우로 합계를 조정
+        for i in k..<nums.count {
+            currentSum += nums[i] - nums[i - k]
+            maxSum = max(maxSum, currentSum)
+        }
+        
+        // 최대 합계를 k로 나누어 평균 반환
+        return Double(maxSum) / Double(k)
+    }
+}
