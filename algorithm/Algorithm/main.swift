@@ -52,4 +52,6 @@ print("✅ 프로그램 시작점")
 //Solution_1004().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2)
 //Solution_1493().longestSubarray([1, 1, 0, 1])
 
-Solution_1732().largestAltitude([-4,-3,-2,-1,4,3,2])
+//Solution_1732().largestAltitude([-4,-3,-2,-1,4,3,2])
+//Solution_1657().closeStrings("cabbba", "abbccc")
+Solution_2352().equalPairs([[3,1,2,2],[1,4,4,4],[2,4,2,2],[2,5,2,2]])

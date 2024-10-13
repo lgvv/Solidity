@@ -483,7 +483,7 @@ class Solution_1493 {
     }
 }
 
-// MARK: - Sliding Window
+// MARK: - Prefix Sum
 
 class Solution_1732 {
     func largestAltitude(_ gain: [Int]) -> Int {
@@ -520,9 +520,104 @@ class Solution_724 {
             
             if leftSum == rightSum {
                 return i
-            } 
+            }
         }
 
         return -1
+    }
+}
+
+// MARK: - Hash Map / Set
+
+class Solution_2215 {
+    func findDifference(_ nums1: [Int], _ nums2: [Int]) -> [[Int]] {
+        let a = Set(nums1).subtracting(Set(nums2))
+        let b = Set(nums2).subtracting(Set(nums1))
+        return [Array(a), Array(b)]
+    }
+}
+
+class Solution_1207 {
+    func uniqueOccurrences(_ arr: [Int]) -> Bool {
+        var dict = [Int: Int]()
+        
+        for i in 0..<arr.count {
+            dict[arr[i], default: 0] += 1
+        }
+        
+        if Set(dict.keys).count == Set(dict.values).count {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+class Solution_1657 {
+    func closeStrings(_ word1: String, _ word2: String) -> Bool {
+        // 1. 길이가 다르면 close할 수 없음
+        if word1.count != word2.count {
+            return false
+        }
+        
+        // 2. 각 문자열에서 등장한 문자 집합을 구함
+        let set1 = Set(word1)
+        let set2 = Set(word2)
+        
+        // 3. 두 집합이 다르면 close할 수 없음
+        if set1 != set2 {
+            return false
+        }
+        
+        // 4. 각 문자의 빈도를 계산
+        let freq1 = word1.reduce(into: [Character: Int]()) { counts, char in
+            counts[char, default: 0] += 1
+        }
+        
+        let freq2 = word2.reduce(into: [Character: Int]()) { counts, char in
+            counts[char, default: 0] += 1
+        }
+        
+        // 5. 두 빈도 배열이 같은지 비교
+        let sortedFreq1 = freq1.values.sorted()
+        let sortedFreq2 = freq2.values.sorted()
+        
+        return sortedFreq1 == sortedFreq2
+    }
+}
+
+class Solution_2352 {
+    func equalPairs(_ grid: [[Int]]) -> Int {
+        typealias Key = [Int]
+        var colDict: [Key: Int] = [:]
+        var rowDict: [Key: Int] = [:]
+        
+        for i in 0..<grid.count {
+            var col = [Int]()
+            var row = [Int]()
+            
+            col = grid[i]
+            
+            for j in 0..<grid.count {
+                row.append(grid[j][i])
+            }
+            
+            print(row, col)
+            colDict.updateValue((colDict[col] ?? 0) + 1, forKey: col)
+            rowDict.updateValue((rowDict[row] ?? 0) + 1, forKey: row)
+        }
+        
+//        print(colDict)
+//        print(rowDict)
+        
+        var count = 0
+        colDict.forEach { key, value in
+            let rowValue = rowDict[key] ?? 0
+            count += rowValue * value
+        }
+        
+//        print(count)
+//        
+        return count
     }
 }
