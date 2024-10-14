@@ -54,4 +54,7 @@ print("✅ 프로그램 시작점")
 
 //Solution_1732().largestAltitude([-4,-3,-2,-1,4,3,2])
 //Solution_1657().closeStrings("cabbba", "abbccc")
-Solution_2352().equalPairs([[3,1,2,2],[1,4,4,4],[2,4,2,2],[2,5,2,2]])
+//Solution_2352().equalPairs([[3,1,2,2],[1,4,4,4],[2,4,2,2],[2,5,2,2]])
+//Solution_2390().removeStars("leet**cod*e")
+//Solution_735().asteroidCollision([-2, -1, 1, 2])
+Solution_394().decodeString("3[a2[c]]")

@@ -621,3 +621,96 @@ class Solution_2352 {
         return count
     }
 }
+
+// MARK: - Stack
+
+class Solution_2390 {
+    func removeStars(_ s: String) -> String {
+        
+        var count = 0
+        var result = ""
+        
+        s.reversed().forEach { c in
+            if c == "*" {
+                count += 1
+            } else if count == 0 {
+                result += String(c)
+            } else {
+                count -= 1
+            }
+        }
+//        print(String(result.reversed()))
+        
+        return String(result.reversed())
+    }
+}
+
+class Solution_735 {
+    func asteroidCollision(_ asteroids: [Int]) -> [Int] {
+        var stack: [Int] = []
+        
+        for asteroid in asteroids {
+            var isDestroyed = false
+            
+            // 충돌 가능한 상황을 체크: 오른쪽(양수)으로 가는 소행성들과 왼쪽(음수)으로 가는 소행성들이 충돌할 때
+            while !stack.isEmpty && asteroid < 0 && stack.last! > 0 {
+                if stack.last! < -asteroid {
+                    // 스택의 마지막 소행성이 더 작으면 파괴됨 (계속 충돌을 진행)
+                    stack.removeLast()
+                } else if stack.last! == -asteroid {
+                    // 둘의 크기가 같으면 둘 다 파괴됨
+                    stack.removeLast()
+                    isDestroyed = true
+                    break
+                } else {
+                    // 스택의 마지막 소행성이 더 크면 현재 소행성이 파괴됨
+                    isDestroyed = true
+                    break
+                }
+            }
+            
+            // 소행성이 파괴되지 않았으면 스택에 추가
+            if !isDestroyed {
+                stack.append(asteroid)
+            }
+        }
+        
+        print(stack)
+        
+        return stack
+    }
+}
+
+class Solution_394 {
+    func decodeString(_ s: String) -> String {
+        var countStack = [Int]()  // 반복 횟수를 저장하는 스택
+        var resultStack = [String]()  // 문자열을 저장하는 스택
+        var currentString = ""  // 현재 처리 중인 문자열
+        var currentNumber = 0  // 현재 숫자 (반복 횟수)
+
+        for char in s {
+            if char.isNumber {
+                // 숫자를 읽어서 currentNumber에 저장 (여러 자리일 수 있음)
+                currentNumber = currentNumber * 10 + Int(String(char))!
+            } else if char == "[" {
+                // '['를 만나면 현재 숫자와 문자열을 스택에 저장하고 초기화
+                countStack.append(currentNumber)
+                resultStack.append(currentString)
+                currentNumber = 0
+                currentString = ""
+            } else if char == "]" {
+                // ']'를 만나면 스택에서 값을 꺼내 반복 처리
+                let repeatCount = countStack.removeLast()
+                let previousString = resultStack.removeLast()
+                print(resultStack,previousString)
+                currentString = previousString + String(repeating: currentString, count: repeatCount)
+            } else {
+                // 알파벳 문자는 현재 문자열에 추가
+                currentString += String(char)
+            }
+            print(countStack, currentString ,resultStack)
+        }
+
+        return currentString
+    }
+}
